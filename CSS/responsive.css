@@ -1,0 +1,60 @@
+/* Medium Screen */
+@media (max-width: 991px) {
+  html,
+  body {
+    width: 100vw;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .container {
+    width: 80%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .all-players {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2 fr);
+  }
+  .all-blogs,
+  .all-courses {
+    grid-template-columns: 1fr;
+  }
+  .blog {
+    justify-content: center;
+  }
+
+  .course,
+  .player {
+    margin: 0 auto;
+  }
+}
+
+/* Small Screen */
+@media (max-width: 688px) {
+  .section-title {
+    text-align: center;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .all-players,
+  .all-blogs,
+  .all-courses {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .player,
+  .blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .course {
+    margin: 0 auto;
+  }
+}
